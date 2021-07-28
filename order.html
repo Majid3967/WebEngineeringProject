@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Order</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Order Details</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <form name="order" action="order.php" method="post">
+            <div class="row">
+                <div class="column">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Name Here" required>
+                </div>
+                <div class="column">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Email Here" required>
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="column">
+                    <label for="phone">Contact Number</label>
+                    <input type="text" name="phone" id="phone" placeholder="Contact Number Here" required>
+                </div>
+                <div class="column">
+                    <label for="code">Product | Services</label>
+                    <input type="text" name="code" id="code" placeholder="Enter Code Here" required>
+                </div>
+                <div class="column">
+                    <label for="product">Product</label>
+                    <input type="radio" id="prodct" name="type" value="p" required>
+                    <label for="service">Service</label>
+                    <input type="radio" id="service" name="type" value="s" required>
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <label for="description">Description</label>
+                    <textarea id="description" name="description" placeholder="Leave any Description here" rows="3"></textarea>
+                </div>
+            </div>
+            <button type="submit">Order</button>
+        </form>
+    </div>
+</body>
+</html>
